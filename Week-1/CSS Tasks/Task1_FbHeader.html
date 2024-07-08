@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Profile Page</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+      body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        min-height: 100vh;
+        font-family: "Poppins", sans-serif;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .header__wrapper header {
+        width: 100%;
+        background: url("logo-facebook.png") no-repeat 50% 20% / cover;
+        min-height: calc(100px + 15vw);
+        
+      }
+
+      .cols__container {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .left__col {
+        padding: 25px 20px;
+        text-align: center;
+        max-width: 350px;
+        position: relative;
+        margin: 0 auto;
+      }
+
+      .img__container {
+        position: absolute;
+        top: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .img__container img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+        display: block;
+        box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.18);
+      }
+
+      .img__container span {
+        position: absolute;
+        background: #2afa6a;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        bottom: 3px;
+        right: 11px;
+        border: 2px solid #fff;
+      }
+
+      .left__col h2 {
+        margin-top: 60px;
+        font-weight: 600;
+        font-size: 22px;
+        margin-bottom: 5px;
+      }
+
+      .left__col p {
+        font-size: 0.9rem;
+        color: #404040;
+        margin: 0;
+      }
+
+      .about {
+        justify-content: space-between;
+        position: relative;
+        margin: 35px 0;
+      }
+
+      .about li {
+        display: flex;
+        flex-direction: column;
+        color: #2f2f2f;
+        font-size: 0.9rem;
+      }
+
+      .content {
+        margin-top: 20px;
+      }
+
+      .content p {
+        font-size: 0.9rem;
+        color: #818181;
+      }
+
+      .content ul {
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .content ul li {
+        margin: 0 10px;
+        font-size: 1.5rem;
+        color: #0f0f0f;
+      }
+
+      .right__col {
+        padding: 25px 20px;
+        max-width: 800px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-right: 10px;
+        
+      }
+
+      nav ul {
+        display: flex;
+        gap: 50px;
+      }
+
+      nav ul li {
+        font-size: large;
+      }
+
+      nav ul li a {
+        color: #0a0a0a;
+      }
+
+      nav button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #3b5998;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .photos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-right: 50px;
+      }
+
+      .photos img {
+        width: 100%;
+        border-radius: 5px;
+      }
+    </style>
+</head>
+<body>
+    <div class="header__wrapper">
+      <header></header>
+      <div class="cols__container">
+        <div class="left__col">
+          <div class="img__container">
+            <img src="profile-pic.png" alt="profile-pic" />
+            <span></span>
+          </div>
+          <h2>Priyanshu Yadav</h2>
+          <p>Software Developer</p>
+          <p>py2752003@gmail.com</p>
+
+          <ul class="about">
+            <li><span>498</span>Followers</li>
+            <li><span>322</span>Following</li>
+            <li><span>27,933</span>Attraction</li>
+          </ul>
+
+          <div class="content">
+            <p>
+                Hello! I'm Priyanshu Yadav, a passionate developer with a love for coding and creating innovative solutions. I have experience in various programming languages and technologies, and I'm always eager to learn more and take on new challenges.
+            </p>
+
+            <ul>
+              <li><i class="fab fa-twitter"></i></li>
+              <li><i class="fab fa-pinterest"></i></li>
+              <li><i class="fab fa-facebook"></i></li>
+              <li><i class="fab fa-dribbble"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="right__col">
+          <nav>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Photos</a></li>
+              <li><a href="#">Galleries</a></li>
+              <li><a href="#">Groups</a></li>
+            </ul>
+            <button>Follow</button>
+          </nav>
+
+          <div class="photos">
+            <img src="img_1.jpg" alt="Photo" />
+            <img src="img_2.jpg" alt="Photo" />
+            <img src="img_3.jpg" alt="Photo" />
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

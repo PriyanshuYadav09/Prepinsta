@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+
+    <style>
+        body {
+           font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F3F8FF; 
+            color: #0a0b0b; 
+        }
+
+        header {
+            background: linear-gradient(to right, #f1ad2e, 
+            #282727); 
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #000000; 
+            overflow: hidden;
+            padding: 10px 0;
+            text-align: center;
+            
+        }
+
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.1em;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #FFD700; 
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #FFFFFF; 
+            
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 5px;
+           
+        }
+
+        section h2 {
+            color: #1b1c1c; /* Steel */
+            border-bottom: 2px solid #48515c; 
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        section#about {
+            display: flex;
+            color: #000000;
+            align-items: center;
+        }
+
+        section#about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #f3da4b; 
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            
+        }
+
+        ul li span {
+            font-weight: bold;
+            color: #28302c; 
+        }
+
+        a {
+            color: #0a0b0b; 
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #9a7530; 
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a href="#future">Future Items</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <img src="profile-pic.png" alt="Profile Picture">
+            <div>
+                <h2>About Me</h2>
+                <p>Hello! I'm Priyanshu Yadav, a passionate developer with a love for coding and creating innovative solutions. I have experience in various programming languages and technologies, and I'm always eager to learn more and take on new challenges.</p>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><span>HTML & CSS:</span> Building responsive and accessible web pages.</li>
+                <li><span>JavaScript:</span> Developing interactive web applications.</li>
+                <li><span>Python:</span> Writing scripts and building backend services.</li>
+                <li><span>React:</span> Creating dynamic user interfaces.</li>
+                <li><span>Node.js:</span> Building scalable server-side applications.</li>
+                <li><span>SQL:</span> Managing and querying databases.</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><span>Project 1:</span>Personal Portfolio website using HTML & CSS .</li>
+                <li><span>Project 2:</span>Not done yet.</li>
+                <li><span>Project 3:</span>Not done yet .</li>
+            </ul>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li><span>Position 1:</span> Fresher.</li>
+                <li><span>Position 2:</span>  .</li>
+                <li><span>Position 3:</span> .</li>
+            </ul>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><span>Degree:</span> Bachelor of Technology in Computer Science<br>
+                    <span>Institution:</span> Shree Vaishnav Vidyapeeth Vishwavidyalaya<br>
+                    <span>Year:</span> 2021 - 2025</li>
+                <li><span>Higher Secondary:</span> CBSE <br>
+                    <span>Institution:</span> Shree Bal Vinay Mandir<br>
+                    <span>Year:</span> 2020 - 2021</li>
+                <li><span>Secondary School:</span> CBSE <br>
+                    <span>Institution:</span> Shree Bal Vinay Mandir<br>
+                    <span>Year:</span> 2018 - 2019</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:py2752003@gmail.com">py2752003@gmail.com</a></p>
+            <p>Phone: +123-456-7890</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/priyanshu-yadav-3968972aa/">PRIYANSHU YADAV</a></p>
+            <p>GitHub: <a href="https://github.com/PriyanshuYadav09">PriyanshuYadav09</a></p>
+        </section>
+        <section id="future">
+            <h2>Future Items</h2>
+            <p>This section is reserved for future additions and updates to the portfolio.</p>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 Priyanshu Yadav. All rights reserved.
+    </footer>
+</body>
+</html>

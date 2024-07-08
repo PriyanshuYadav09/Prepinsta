@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Sports Store</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #232f3e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 10px 0 0 0;
+        }
+
+        header ul li {
+            margin: 0 15px;
+        }
+
+        header ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .filters {
+            flex: 1;
+            padding: 20px;
+            border-right: 1px solid #ccc;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .filters h2 {
+            margin-top: 0;
+            color: #333333;
+        }
+        .filters form {
+            margin-top: 20px;
+        }
+
+        .filters label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #555555;
+        }
+
+        .filters select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .filters button {
+            display: block;
+            width: 100%;
+            padding: 10px 15px;
+            background-color: #232f3e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .filters button:hover {
+            background-color: #37475a;
+        }
+
+        .product-list {
+            flex: 3;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            width: 200px;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-card h3 {
+            margin: 10px 0 5px;
+        }
+
+        .product-card p {
+            margin: 5px 0;
+        }
+
+        .product-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #232f3e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .product-card a:hover {
+            background-color: #37475a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Awesome Sports Store</h1>
+        <ul>
+            <li><a href="#category1">Category 1</a></li>
+            <li><a href="#category2">Category 2</a></li>
+            <li><a href="#category3">Category 3</a></li>
+            <li><a href="#category4">Category 4</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="filters">
+            <h2>Filters</h2>
+            <form>
+                <div>
+                    <label for="category">Category</label>
+                    <select id="category">
+                        <option value="all">All</option>
+                        <option value="equipment">Equipment</option>
+                        <option value="sportswear">Sportswear</option>
+                        <option value="shoes">Shoes</option>
+                        <option value="kitbags">Kit Bags</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="price">Price Range</label>
+                    <select id="price">
+                        <option value="all">All</option>
+                        <option value="0-500">$0 - $500</option>
+                        <option value="500-1000">$500 - $1000</option>
+                        <option value="1000-2000">$1000 - $2000</option>
+                        <option value="2000+">$2000+</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="rating">Rating</label>
+                    <select id="rating">
+                        <option value="all">All</option>
+                        <option value="4">& Up (4 stars)</option>
+                        <option value="3">& Up (3 stars)</option>
+                        <option value="2">& Up (2 stars)</option>
+                        <option value="1">& Up (1 star)</option>
+                    </select>
+                </div>
+                <button type="submit">Apply Filters</button>
+            </form>
+        </div>
+        <div class="product-list">
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/41RiqfqzVRL.jpg" alt="Helmet">
+                <h3>Helmet <span>$388</span></h3>
+                <p>Perfect for protection made with solid material.</p>
+                <a href="https://www.amazon.in/Gmefvr-Cricket-Helmet-Adjustable-Steel/dp/B0BP7Y1X52?ref_=Oct_d_orecs_d_3403865031_0&pd_rd_w=llF3z&content-id=amzn1.sym.801f2344-e30d-486f-89fe-996f899377f9&pf_rd_p=801f2344-e30d-486f-89fe-996f899377f9&pf_rd_r=VBYP9H6QA62C914JAHZ3&pd_rd_wg=lbdbc&pd_rd_r=a252f1a2-7b86-444c-8533-37c11630ceac&pd_rd_i=B0BP7Y1X52&th=1">View Details</a>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/41U11rnBZPL._SX300_SY300_QL70_FMwebp_.jpg" alt="Cricket Bat">
+                <h3>Cricket Bat <span>$479</span></h3>
+                <p>MRF Cricket Bat for best Batting</p>
+                <a href="https://www.amazon.in/JRS-Tennis-Cricket-Multibrand-Sticker/dp/B08DMR4Z2X?ref_=Oct_d_oup_d_3403857031_1&pd_rd_w=L67Bn&content-id=amzn1.sym.d05cb1d7-8c7f-497f-a398-7edf65a8d03b&pf_rd_p=d05cb1d7-8c7f-497f-a398-7edf65a8d03b&pf_rd_r=C54YZ1HWW5WCAYSBT0W1&pd_rd_wg=7QiTr&pd_rd_r=fd4b2cc0-e4e1-446c-ba9f-5d3cafc317bc&pd_rd_i=B08DMR4Z2X&th=1">View Details</a>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51kp+up3hGL.jpg" alt="India Jersey">
+                <h3>India Jersey <span>$699</span></h3>
+                <p>Comfortable and stylish Indian Jersey.</p>
+                <a href="https://www.amazon.in/JUSBALL-Plain-Jersey-2024-2025-Cricket/dp/B0CVGSWFZH/ref=sr_1_6?dib=eyJ2IjoiMSJ9.yOAFMvEezHZR0bmdSERTnYvWGR_3h0Am0c8tSImxeuvjJkXVL4lO7T86V5LSIBMtMQXR3AT91ZDL7Fzlf6ptOGd8KmnN0iitgBweK0Io0Qg9m7PJj-NaCT07diNQ1F2ZUF5uP-rPuYVF7klWRLZxxTUbqYGo92M3UM6eR4wwFYWHCfa8FNgUC2lp5Imf4N38ZCKPhdiKlletDVI8tTZ8rhMGmi01cA-E2F-wjRB5Pd5xsjuRCtl_09qPUwpf3iyUAcU9-VNPxhRqZEA5UYOTZqdqNDEpxfc9R18f5T9rEIA.B7BeI1QKPpIdwjCbAsz_yrXG4UN8h7Dad3_sxDhmnfM&dib_tag=se&pf_rd_i=3403628031&pf_rd_m=AT95IG9ONZD7S&pf_rd_p=db79781c-a992-4e51-9cc2-cba9f2c96ec4&pf_rd_r=YTC6PQSJEX1TWYTV3HQ6&pf_rd_s=merchandised-search-9&pf_rd_t=101&qid=1720175643&s=apparel&sr=1-6">View Details</a>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/915Lc37oLEL._SX679_.jpg" alt="Hooded T-shirt">
+                <h3>Hooded T-shirt <span>$559</span></h3>
+                <p>Designed for active lifestyles.</p>
+                <a href="https://www.amazon.in/T2F-Boys-Sweatshirt-BYS-SS-03_Multicolor_3-4-Years/dp/B07VS3VNZC/ref=sr_1_44?dib=eyJ2IjoiMSJ9.yOAFMvEezHZR0bmdSERTnYvWGR_3h0Am0c8tSImxeuvjJkXVL4lO7T86V5LSIBMtMQXR3AT91ZDL7Fzlf6ptOGd8KmnN0iitgBweK0Io0Qg9m7PJj-NaCT07diNQ1F2ZUF5uP-rPuYVF7klWRLZxxTUbqYGo92M3UM6eR4wwFYWHCfa8FNgUC2lp5Imf4N38ZCKPhdiKlletDVI8tTZ8rhMGmi01cA-E2F-wjRB5Pd5xsjuRCtl_09qPUwpf3iyUAcU9-VNPxhRqZEA5UYOTZqdqNDEpxfc9R18f5T9rEIA.B7BeI1QKPpIdwjCbAsz_yrXG4UN8h7Dad3_sxDhmnfM&dib_tag=se&pf_rd_i=3403628031&pf_rd_m=AT95IG9ONZD7S&pf_rd_p=db79781c-a992-4e51-9cc2-cba9f2c96ec4&pf_rd_r=YTC6PQSJEX1TWYTV3HQ6&pf_rd_s=merchandised-search-9&pf_rd_t=101&qid=1720175643&s=apparel&sr=1-44">View Details</a>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/41wh-RxQgQL.jpg" alt="Sports Shoes">
+                <h3>Sports Shoes <span>$699</span></h3>
+                <p>Sports Shoes with Cushioned ankle, Padded foot bed</p>
+                <a href="https://www.amazon.in/Vector-X-Blast-Cricket-Shoes/dp/B012CG138C?ref_=Oct_d_omg_d_3403862031_0&pd_rd_w=HfqZ1&content-id=amzn1.sym.2d264aa6-9ad3-49d6-92fc-82f589092e79&pf_rd_p=2d264aa6-9ad3-49d6-92fc-82f589092e79&pf_rd_r=7KEME6RH5SR0TH2R1NF0&pd_rd_wg=UPzlH&pd_rd_r=d787c105-81e1-49cf-97a4-2944480e3c82&pd_rd_i=B012CG138C">View Details</a>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/513SzEEev1L._SY695_.jpg" alt="Cricket Shoes">
+                <h3>Cricket Shoes <span>$2,749</span></h3>
+                <p>Puma Lace-Up Flat Cricket Shoes</p>
+                <a href="https://www.amazon.in/Cricket-Square-White-Blue-Glimmer-Elektro-Green/dp/B09VDDTYDT?ref_=Oct_d_orecs_d_3403862031_1&pd_rd_w=xC08i&content-id=amzn1.sym.801f2344-e30d-486f-89fe-996f899377f9&pf_rd_p=801f2344-e30d-486f-89fe-996f899377f9&pf_rd_r=BHGDYBKX0D12BVDPNQH6&pd_rd_wg=Kne1e&pd_rd_r=7749d46c-dd29-44a5-b1ac-223ed89184a0&pd_rd_i=B09VDDTYDT">View Details</a>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/815mEHjDUzL._SY879_.jpg" alt="Kit Bag">
+                <h3>Kit Bag <span>$2,299</span></h3>
+                <p>SAS international sports backpack for cricket.</p>
+                <a href="https://www.amazon.in/SAS-SPORTS-Cricket-Wheel-Blue/dp/B08W9V4DLB?ref_=Oct_d_otopr_d_3403861031_3&pd_rd_w=vWXvN&content-id=amzn1.sym.601891be-591c-4695-b226-dfc2707ab366&pf_rd_p=601891be-591c-4695-b226-dfc2707ab366&pf_rd_r=85D2T3AKW8YTFKBF8D9Z&pd_rd_wg=9fIeh&pd_rd_r=b3cdab51-7d65-40b2-bebd-caef58634bc6&pd_rd_i=B08W9V4DLB">View Details</a>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/81PQ-z4CVLL._SX679_.jpg" alt="Trolley Bag">
+                <h3>Trolley Bag <span>$2,695</span></h3>
+                <p>An ideal player trolley kit which accommodates all necessary items.</p>
+                <a href="https://www.amazon.in/SG-Cricket-CLUBPAK-Plus-Trolley/dp/B0BN3KSYCD?ref_=Oct_d_otopr_d_3403861031_0&pd_rd_w=vWXvN&content-id=amzn1.sym.601891be-591c-4695-b226-dfc2707ab366&pf_rd_p=601891be-591c-4695-b226-dfc2707ab366&pf_rd_r=85D2T3AKW8YTFKBF8D9Z&pd_rd_wg=9fIeh&pd_rd_r=b3cdab51-7d65-40b2-bebd-caef58634bc6&pd_rd_i=B0BN3KSYCD">View Details</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
