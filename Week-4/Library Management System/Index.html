@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Library Management</h2>
+            <button onclick="showAddBookForm()">Add Book</button>
+            <button onclick="showAllBooks()">Show All Books</button>
+            <button onclick="searchBooks()">Search Books</button>
+            <button onclick="filterBooks()">Filter Books</button>
+        </div>
+        <div class="content">
+            <div id="addBookForm" class="form-container" style="display: none;">
+                <h3>Add New Book</h3>
+                <input type="text" id="bookTitle" placeholder="Title">
+                <input type="text" id="bookAuthor" placeholder="Author">
+                <input type="number" id="bookYear" placeholder="Year">
+                <input type="text" id="bookGenre" placeholder="Genre">
+                <button onclick="addBook()">Add Book</button>
+            </div>
+            <div id="searchBookForm" class="form-container" style="display: none;">
+                <h3>Search Books</h3>
+                <input type="text" id="searchQuery" placeholder="Enter title or author">
+                <button onclick="performSearch()">Search</button>
+            </div>
+            <div id="filterBookForm" class="form-container" style="display: none;">
+                <h3>Filter Books</h3>
+                <input type="text" id="filterTitle" placeholder="Filter by Title">
+                <input type="text" id="filterAuthor" placeholder="Filter by Author">
+                <input type="number" id="filterYear" placeholder="Filter by Year">
+                <input type="text" id="filterGenre" placeholder="Filter by Genre">
+                <button onclick="performFilter()">Filter</button>
+            </div>
+            <div id="editBookForm" class="form-container" style="display: none;">
+                <h3>Edit Book</h3>
+                <input type="text" id="editBookTitle" placeholder="Title">
+                <input type="text" id="editBookAuthor" placeholder="Author">
+                <input type="number" id="editBookYear" placeholder="Year">
+                <input type="text" id="editBookGenre" placeholder="Genre">
+                <button onclick="updateBook()">Update Book</button>
+            </div>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

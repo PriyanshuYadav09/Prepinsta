@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <div class="container">
+        <div class="timerandscore">
+            <h2 id="timer">TIME LEFT: <span id="time">220</span> seconds</h2>
+        </div>
+
+        <div class="questionnumber">
+            <h2 id="number"></h2>
+        </div>
+        <div class="question" id="quiz">
+            <h2 id="question_container"></h2>
+            <div id="option_container"></div>
+            <p id="display"></p>
+            <button onclick="previousQuestion()" id="previous">PREVIOUS</button>
+            <button onclick="nextQuestion()" id="next">NEXT</button>
+            <button onclick="submitQuiz()" id="click" style="display: none;">SUBMIT</button>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <div id="congratsPopup" class="popup">
+        <h3>Congratulations!</h3>
+        <p>You cleared the Quiz</p>
+        <button onclick="closePopup('congratsPopup')">Close</button>
+    </div>
+
+    <div id="tryAgainPopup" class="popup">
+        <h3>Study Hard & Try Again!</h3>
+        <p>😢</p>
+        <button onclick="closePopup('tryAgainPopup')">Close</button>
+    </div>
+
+    <div class="status">
+        <h3>Question Status</h3>
+        <ul id="status_list"></ul>
+    </div>
+    
+
+   
+       
+<script src="script.js"></script>
+    
+</body>
+
+</html>
+
+
+
+
